@@ -25,7 +25,16 @@ Leaflet LayerGroup 图层组显示隐藏插件。
 ~~~
 
 ~~~ js
-	//初始化地图
+	// 初始化地图
+    var map = L.map('map', {
+        center: [39.905963, 116.320813],
+        zoom: 12,
+        preferCanvas: true //使用canvas模式渲染矢量图形 
+    });
+    // 添加底图
+    var tiles = L.tileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}.png').addTo(map);
+
+	//初始化layergroup
 	var myLayerGroup = L.layerGroup().addTo(map)
 
     // 图层显示
