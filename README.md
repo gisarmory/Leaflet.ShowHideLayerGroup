@@ -1,5 +1,5 @@
 # Leaflet.ShowHideLayerGroup
-Leaflet LayerGroup 图层组显示隐藏插件。
+Leaflet通过LayerGroup控制大量、多种图层显示隐藏。
 
 ## 简介：
 
@@ -9,7 +9,7 @@ Leaflet LayerGroup 图层组显示隐藏插件。
 
 第二种，通过‘layergroup.eachLayer()’方法循环遍历控制图层显示隐藏，此方式通过修改图层样式直接控制图层显示隐藏，在数据量较大或者需要频繁切换显示隐藏时，都比较流畅。
 
-我们将第二种方式封装成Leaflet.ShowHideLayerGroup.js插件，支持maker图层 和 vector图层同时控制，还记录了图层默认状态下的透明度，以保证切换到显示时样式一致，方便大家使用。
+我们将第二种方式封装成Leaflet.ShowHideLayerGroup.js插件，而且支持maker图层 和 vector图层同时控制，还记录了图层默认状态下的透明度，以保证切换到显示时与原样式一致，方便大家使用。
 
 ## 用法：
 
