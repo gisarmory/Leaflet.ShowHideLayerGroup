@@ -5,12 +5,12 @@ L.LayerGroup.include({
           // 记录默认时opacity值，以便显示时样式一致
           if(itemLayer.options.opacity){
               itemLayer.options.opacityBefore = itemLayer.options.opacity
-          } else {
+          } else if(!itemLayer.options.opacityBefore){
               itemLayer.options.opacityBefore = 1
           }
           if(itemLayer.options.fillOpacity){
               itemLayer.options.fillOpacityBefore = itemLayer.options.fillOpacity
-          } else {
+          } else if(!itemLayer.options.fillOpacityBefore) {
               itemLayer.options.fillOpacityBefore = 1
           }
 

@@ -56,23 +56,26 @@
   var tiles = L.tileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}.png').addTo(map);
 
   var myLayerGroup = L.layerGroup().addTo(map)
+  // var myLayerGroup = L.layerGroup()
   addPoint()
   addPolyline()
   addPolygon()
 
   // 图层显示
   function showLayer() {
+    // map.addLayer(myLayerGroup)
     myLayerGroup.showLayer()
   }
 
   // 图层隐藏
   function hideLayer() {
+    // map.removeLayer(myLayerGroup)
     myLayerGroup.hideLayer()
   }
 
   // 添加点
   function addPoint() {
-    for (var i = 0; i < 200; i++) {
+    for (var i = 0; i < 2000; i++) {
       var lat = 39.905963 + (Math.random() - Math.random()) * 0.1;
       var lng = 116.340813 + (Math.random() - Math.random()) * 0.2;
       var marker = L.marker([lat, lng], {
